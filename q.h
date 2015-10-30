@@ -1,111 +1,110 @@
 /* Functions that need to be included in this file
-1.	item = NewItem(); // returns a pointer to a new q-element
-2.	InitQueue( &head) // creates a empty queue, pointed to by the variable head.
-3.	AddQueue(&head, item) // adds a queue item, pointed to by ìitemî, to the queue pointed to by head.
-4.	item = DelQueue(&head) // deletes an item from head and returns a pointer to the deleted item
-5.	RotateQ(&head) // Moves the header pointer to the next element in the queue. This is equivalent to
-AddQ(&head, DeleteQ(&head)), but is simpler to use and more efficient to implement.
+	1.	item = NewItem(); // returns a pointer to a new q-element
+	2.	InitQueue( &head) // creates a empty queue, pointed to by the variable head.
+	3.	AddQueue(&head, item) // adds a queue item, pointed to by ‚Äúitem‚Äù, to the queue pointed to by head.
+	4.	item = DelQueue(&head) // deletes an item from head and returns a pointer to the deleted item
+	5.	RotateQ(&head) // Moves the header pointer to the next element in the queue. This is equivalent to 
+	    AddQ(&head, DeleteQ(&head)), but is simpler to use and more efficient to implement.
 */
 #include<stdio.h>
 #include<stdlib.h>
 #include <iostream>
-#include<io.h>
+#include <io.h>
 
-using namespace std;
+#include "tcb.h"
 
-typedef struct q_element
+
+struct TCB_t* NewItem();
+void q * InitQueue(q *head);
+void AddQueue(struct q *head, struct TCB_t *item);
+struct TCB_t*  DelQueue(struct q *head);
+void RotateQ(q *head);
+void printQ(q *head); 
+
+
+
+typedef struct q
 {
-	q_element *previous_element;
-	q_element *next_element;
-	int payload;
-}q_element;
-
-typedef struct q {
-	q_element *header;
+	struct TCB_t *header;
 }q;
 
-
-
 // returns a pointer to a new q-element
-struct q_element* NewItem()
+struct TCB_t* NewItem()
 {
-	//q_element *new_Element = (q_element*) malloc(sizeof(q_element)); //replace with new
-	q_element *new_Element = new q_element();
-	if (!new_Element) {
-		new_Element->previous_element = NULL;
-		new_Element->next_element = NULL;
+	struct TCB_t new_Item = (struct TCB_t*) malloc(sizeof(struct TCB_t));
+	
+	// Initialization of elements
+	if(!new_Item)
+	{
+		new_Item->previous_element = NULL;
+		new_Item->next_element = NULL;
 	}
-
-	return new_Element;
+	
+	return new_Item;
 }
 
 // creates an empty queue pointed to by the variable head
-void InitQueue(q *head)
+void q * InitQueue(q *head)
 {
-	head->header = NULL;
-	return;
+	head->header =  NULL;	
 }
 
-// adds a queue item, pointed to by ìitemî, to the queue pointed 
+// adds a queue item, pointed to by ‚Äúitem‚Äù, to the queue pointed 
 // to by head.
-void AddQueue(q *head, q_element *item)
+void AddQueue(struct q *head, struct TCB_t *item)
 {
-	q_element *q_head = head->header;
-
-	if (q_head != NULL)
+	if(head->header != NULL)
 	{
 		// Queue with one element (header)
-		if (q_head->next_element == NULL)
-		{	// check order 
-			q_head->next_element = item;
-			q_head->previous_element = item;
-			item->next_element = q_head;
-			item->previous_element = q_head->previous_element; // check 
-			cout << "passed 2 ";
+		if(head->header->next_element == NULL)
+		{
+			head->header->next_element = item;
+			head->header->previous_element = item;
+			item->next_element = head->header;
+			item->previous_element = head->header;
+			cout << "passed 3 ";
 		}
-
+		
 		// Queue with multiple items
 		else
 		{
-			q_head->next_element = item;
-			q_head->previous_element = item;
-			item->next_element = q_head;
-			item->previous_element = q_head;
+			head->header->previous_element->next_element = item;
+			head->header->previous_element = item;
+			item->next_element = head->header;
+			item->previous_element = head->header->previous_element;
 			cout << "passed 3 ";
-		}
-
+		}	
+		
 	}
-
+	
 	// Empty queue
-	else
+	else 
 	{
+		q_head = item;
 		head->header = item;
 		item->next_element = NULL;
 		item->previous_element = NULL;
 		cout << "passed 1 ";
 	}
-	return;
 }
 
 // deletes an item from head and returns a pointer 
 // to the deleted item
-q_element*  DelQueue(q *head)
+struct TCB_t*  DelQueue(struct q *head)
 {
-	q_element *q_head_deleted = head->header;
-	q_element *q_head_new = head->header;
-
-	if (q_head_new != NULL)
+	struct TCB_t *q_head_deleted = head->header;
+	
+	if(head->header != NULL)
 	{
-		if (q_head_new->next_element != NULL)
+		if(head->header->next_element != NULL)
 		{
-			q_head_new->previous_element->next_element = q_head_new->next_element;
-			q_head_new->next_element->previous_element = q_head_new->previous_element;
-
-			q_head_new = q_head_new->next_element;
+			head->header->previous_element->next_element = head->header->next_element;
+			head->header->next_element->previous_element = head->header->previous_element;
+			head->header = head->header->next;
 		}
 		else
 		{
-			q_head_new = NULL;
+			head->header = NULL;
 		}
 	}
 	return q_head_deleted;
@@ -116,33 +115,33 @@ q_element*  DelQueue(q *head)
 void RotateQ(q *head)
 {
 	AddQueue(head, DelQueue(head));
-	return;
 }
 
-
-void printQ(q *head) {
+void printQ(q *head) 
+{
 	q_element *item = head->header;
 
-	if (head->header != NULL) {
-
-		if (head->header->next_element != NULL) {
+	if (head->header != NULL) 
+	{
+		if (head->header->next_element != NULL) 
+		{
 			q_element *last = head->header->previous_element;
-
-
-			while (item != NULL && (item->payload != last->payload)) {
+			while (item != NULL && (item->payload != last->payload)) 
+			{
 				cout << "payload: " << item->payload << "\n";
 				item = item->next_element;
 			}
 		}
 	
-		
-		if (item != NULL) {
+		if (item != NULL) 
+		{
 			cout << "payload: " << item->payload;
 		}
-		
 		cout << "\n";
 	}
-	else {
+	
+	else 
+	{
 		cout << "Empty Queue \n";
 	}
 
