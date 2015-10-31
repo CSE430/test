@@ -1,3 +1,4 @@
+#include "q1.h"
 #include "q.h"
 //#include<iostream>
 //using namespace std;

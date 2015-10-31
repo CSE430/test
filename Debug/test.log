@@ -1,13 +1,112 @@
-﻿Build started 10/10/2015 8:38:52 PM.
+﻿Build started 10/30/2015 7:26:23 PM.
      1>Project "C:\Users\Amjad-AJ\Documents\Visual Studio 2015\Projects\test\test.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt proj_1.cpp
-         proj_1.cpp
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Amjad-AJ\Documents\Visual Studio 2015\Projects\test\Debug\test.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Amjad-AJ\Documents\Visual Studio 2015\Projects\test\Debug\test.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Amjad-AJ\Documents\Visual Studio 2015\Projects\test\Debug\test.lib" /MACHINE:X86 Debug\proj_1.obj
-         test.vcxproj -> C:\Users\Amjad-AJ\Documents\Visual Studio 2015\Projects\test\Debug\test.exe
-     1>Done Building Project "C:\Users\Amjad-AJ\Documents\Visual Studio 2015\Projects\test\test.vcxproj" (Build target(s)).
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:prompt thread_test.c
+         thread_test.c
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(17): error C2143: syntax error: missing '{' before '<'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(17): error C2059: syntax error: '<'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(35): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(35): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(36): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(38): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(45): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(45): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(46): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(48): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(55): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(55): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(56): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(58): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(65): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(65): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(66): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(68): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(75): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(75): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(76): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(78): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(85): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(85): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(86): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(88): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(96): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(96): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(97): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(99): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(106): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(106): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(107): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(109): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(116): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(116): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(117): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(119): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(126): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(126): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(127): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(129): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(136): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(136): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(137): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(139): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(146): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(146): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(147): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(149): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(157): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(157): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(158): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(160): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(167): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(167): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(168): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(170): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(177): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(177): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(178): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(180): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(187): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(187): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(188): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(190): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(197): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(197): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(198): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(200): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(207): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(207): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(208): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(210): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(217): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(217): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(218): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(220): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(227): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(227): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(228): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(230): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(237): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(237): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(238): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(240): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(247): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(247): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(248): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(250): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(258): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(258): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(259): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(261): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(269): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(269): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(270): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(272): error C2059: syntax error: '}'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(280): error C2061: syntax error: identifier 'noexcept'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(280): error C2059: syntax error: ';'
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(281): error C2449: found '{' at file scope (missing function header?)
+     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath(281): fatal error C1003: error count exceeds 100; stopping compilation
+     1>Done Building Project "C:\Users\Amjad-AJ\Documents\Visual Studio 2015\Projects\test\test.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:01.07
+Time Elapsed 00:00:00.48
