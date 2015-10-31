@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="q1.h">
+    <ClInclude Include="..\..\..\..\Downloads\threads.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\Downloads\tcb.h">
@@ -24,12 +24,9 @@
     <ClInclude Include="..\..\..\..\Downloads\q.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Downloads\threads.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="thread_test.c">
+    <ClCompile Include="..\..\..\..\Downloads\thread_test.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

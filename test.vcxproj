@@ -121,10 +121,9 @@
     <ClInclude Include="..\..\..\..\Downloads\q.h" />
     <ClInclude Include="..\..\..\..\Downloads\tcb.h" />
     <ClInclude Include="..\..\..\..\Downloads\threads.h" />
-    <ClInclude Include="q1.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="thread_test.c" />
+    <ClCompile Include="..\..\..\..\Downloads\thread_test.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
